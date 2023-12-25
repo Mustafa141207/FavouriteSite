@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container py-4">
+        <div class="header text-center">
+            <h1 class="fs3 text-center my-5">Bookmarker</h1>
+        </div>
+        <div class="contant my-5">
+            <div class="title">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+
+                <h2 class="p-3">bookmark Your favourite site</h2>
+                <span><i class="fa-solid fa-bookmark"></i></span>
+
+            </div>
+            <div class="home">
+
+                <div class="input position-relative">
+                    <span><i class="fa-solid fa-bookmark"></i></span>
+                    <label for="site">site Name</label>
+                    <input type="text" class="form-control my-2" id="site" placeholder="bookmark name">
+                    <i class="fa-solid fa-check d-none" id="right"></i>
+                </div>
+                <span><i class="fa-solid fa-link"></i></span>
+                <label for="url"> Site Url</label>
+                <input type="text" class="form-control my-2" id="url" placeholder="site name">
+                <div class="btnnn d-flex justify-content-center align-items-center my-4">
+                    <button class="btn fw-bolder text-capitalize  btn-danger px-5" id="btnSubmit">submit</button>
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead class="text-center">
+                <th>index</th>
+                <th>website name</th>
+                <th>website url</th>
+                <th>visit</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tBody" class="text-center">
+
+            </tbody>
+        </table>
+
+    </div>
+    <div id="alertBox" class="d-none justify-content-center align-items-center">
+        <div class="content">
+            <div class="title">
+                <div class="left">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <i class="fa-sharp fa-solid fa-xmark fs-3 " id="closeBtn"></i>
+
+            </div>
+            <h4 class="fw-bolder p-2">Site Name or Url is not valid, Please follow the rules below :</h4>
+            <div class="massage">
+                <p class="position-relative">Site name must contain at least 3 characters</p>
+                <p class="position-relative">Site URL must be a valid one</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+
+</html>

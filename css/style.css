@@ -1,0 +1,125 @@
+*{
+    text-transform: capitalize;
+    text-decoration: none !important;
+    transition: 0.3s;
+   
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+.header,
+.contant{
+   border-bottom: 2px dotted black;
+
+}
+h1{
+   font-family: 'Sevillana', cursive;
+   font-weight: bolder;
+   position: relative;
+   z-index: 5;
+   display: inline-block;
+   font-size: 50px;
+
+}
+h1::before{
+   content: '';
+   background-color: #fec260;
+   width: 100%;
+   height: 20px;
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   transition: 0.6s;
+}
+h1:hover::before{
+   height: 90%;
+
+}
+.title{
+   font-family: "Righteous", cursive;
+      font-size: 25px;
+      background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display: flex;
+         justify-content: center;
+         align-items: baseline;
+
+}
+.title h2{
+   font-size: 25px;
+}
+ body{
+    background-color: #f7ecde;
+ }
+ #demo{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    position: absolute;
+ }
+ .title{
+    position: relative;
+ }
+ .title .left i,
+ .right i{
+    width: 40px;
+    height: 40px;
+ }
+#alertBox{
+   position: absolute;
+   height: 100vh;
+   z-index: 5;
+   background-color: rgba(0,0,0,0.6);
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+#alertBox .content{
+   background-color: white;
+   width: 600px;
+  padding: 20px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#alertBox .content .title {
+   display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+#alertBox .content .title .left div{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   margin-left: 5px;
+}
+#alertBox .content .title .left :nth-child(1){
+   background-color: #fec260;
+}
+#alertBox .content .title .left :nth-child(2){
+   background-color:green;
+}
+#alertBox .content .title .left :nth-child(3){
+   background-color: blue;
+}
+#alertBox .massage p::before{
+   position: absolute;
+}
+::selection{
+   background-color: #fec260;
+   color: white;
+}
+.home .input #right{
+      position: absolute;
+         top: 43px;
+         right: 10px;
+         color: green;
+}
+
